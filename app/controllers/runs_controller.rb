@@ -1,4 +1,4 @@
-class RunsController < ApplicationController
+class RunsController < ProtectedController
   before_action :set_run, only: [:show, :update, :destroy]
 
   # GET /runs
