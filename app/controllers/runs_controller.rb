@@ -46,6 +46,6 @@ class RunsController < ProtectedController
 
     # Only allow a trusted parameter "white list" through.
     def run_params
-      params.require(:run).permit(:date, :distance, :time)
+      params.require(:run).permit(:date, :distance, :time, :id)
     end
 end
